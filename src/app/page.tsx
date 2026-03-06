@@ -34,15 +34,9 @@ export default function Home() {
               <source src={HERO_VIDEO_SRC} type="video/mp4" />
             </video>
           ) : (
-            <Image
-              src="https://picsum.photos/seed/spa-towel/1920/1080?blur=2"
-              alt=""
-              role="presentation"
-              fill
-              className="object-cover opacity-40"
-              sizes="100vw"
-              priority
-            />
+            <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
+              <span className="text-gray-400 text-sm tracking-widest">読み込み中</span>
+            </div>
           )}
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent" />
         </div>
