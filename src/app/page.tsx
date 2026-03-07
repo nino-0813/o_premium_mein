@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, Star, ShieldCheck, Droplets } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
@@ -90,17 +90,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
             {[
               {
-                icon: <ShieldCheck className="w-8 h-8 text-brand-green" />,
                 title: '飛散物から患者様を守る',
                 desc: '歯科治療やクリーニング時に飛散する不快な水はね、歯や金属の破片から患者様をしっかりと守ります。',
               },
               {
-                icon: <Star className="w-8 h-8 text-brand-green" />,
                 title: 'こだわりの「O」サイズ',
                 desc: '治療しやすく、患者様の不快感を取り除くベストな穴（O：オー）のサイズに徹底的にこだわりました。',
               },
               {
-                icon: <Droplets className="w-8 h-8 text-brand-green" />,
                 title: '超甘撚り糸とパイピング',
                 desc: '毛羽立ちが少なく肌触りのよい超甘撚り糸で織りあげ、ほつれ防止にパイピング縫製を施しました。',
               },
@@ -113,9 +110,6 @@ export default function Home() {
                 transition={{ delay: idx * 0.2, duration: 0.6 }}
                 className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 text-center"
               >
-                <div className="mx-auto mb-4 sm:mb-6 flex justify-center">
-                  {feature.icon}
-                </div>
                 <h3 className="font-serif text-lg sm:text-xl text-gray-900 mb-3 sm:mb-4 break-keep">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">{feature.desc}</p>
               </motion.div>
