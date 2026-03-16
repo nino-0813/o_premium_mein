@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: '歯科専用フェイスタオル | O premium',
   },
+  verification: {
+    google: 'fDRaibgQ2klb6HO0ojrsHeY8vnxA7_-zxUzQzH66nsA',
+  },
 };
 
 export default function RootLayout({
