@@ -43,7 +43,7 @@ export default function Purchase() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <h2 className="font-serif text-xl text-gray-900 mb-2">O premium（オゥ・プレミアム）</h2>
+                <h2 className="font-serif text-xl text-gray-900 mb-2">O premium（オー・プレミアム）</h2>
                 <p className="text-sm text-gray-500 mb-4">グレー / 穴あき仕様</p>
                 <div className="text-2xl text-brand-green font-serif">
                   ¥{price.toLocaleString()} <span className="text-xs text-gray-500 font-sans">/ 枚 (税抜)</span>

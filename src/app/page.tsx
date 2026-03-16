@@ -50,7 +50,7 @@ export default function Home() {
           >
             <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-4 sm:mb-6 break-keep">
               歯科専門<br />
-              オゥ・プレミアム<br />
+              オー・プレミアム<br />
               <span className="text-brand-green">O premium</span>
             </h1>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10 tracking-wide">
