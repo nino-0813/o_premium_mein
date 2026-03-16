@@ -70,7 +70,7 @@ export default function About() {
                 糸の撚り（ねじり）を極限まで甘くすることで、驚くほどふんわりとした肌触りと、優れた吸水性を実現しました。毛羽立ちも少なく、患者様のお肌を優しく包み込みます。
               </li>
               <li>
-                <strong>計算された「O（オー）」サイズ：</strong><br />
+                <strong>計算された「O（オゥ）」サイズ：</strong><br />
                 口元の穴のサイズは、大きすぎても小さすぎてもいけません。飛散物から顔を守りつつ、ドクターや衛生士がスムーズにアプローチできる「ベストな穴のサイズ」を徹底的に検証しました。
               </li>
               <li>
@@ -90,7 +90,11 @@ export default function About() {
             </div>
 
             <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-keep">
+<<<<<<< HEAD
               「O premium（オー・プレミアム）」に込めた想い
+=======
+              「O premium（オゥ・プレミアム）」に込めた想い
+>>>>>>> 8806563 (Initial import from local)
             </h3>
 
             <p className="mb-8">

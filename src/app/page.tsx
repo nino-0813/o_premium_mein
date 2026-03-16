@@ -48,18 +48,13 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-2xl min-w-0"
           >
-            <h2 className="text-brand-green font-serif text-sm sm:text-lg md:text-xl tracking-[0.15em] sm:tracking-[0.2em] mb-3 sm:mb-4">
-              現場の歯科衛生士が考えた
-            </h2>
             <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-4 sm:mb-6 break-keep">
-              歯科専用<br />
-              プレミアムタオル<br />
+              歯科専門<br />
+              オゥ・プレミアム<br />
               <span className="text-brand-green">O premium</span>
             </h1>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10 tracking-wide">
-              超甘撚り（ちょうあまより）糸で織りあげた、<br className="sm:hidden" />
-              吸水性に優れ、<br className="sm:hidden" />
-              とにかくふわふわのタオルです。
+              超甘撚り（ちょうあまより）糸で織りあげた、吸水性に優れ、とにかくふわふわのタオルです。
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link

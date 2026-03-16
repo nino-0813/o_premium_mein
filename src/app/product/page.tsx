@@ -66,7 +66,7 @@ export default function Product() {
                   歯科専用設計
                 </span>
               </div>
-              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-4 break-keep">O premium（オー・プレミアム）</h2>
+              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-4 break-keep">O premium（オゥ・プレミアム）</h2>
               <p className="text-2xl text-brand-green font-serif mb-8">
                 ¥1,200 <span className="text-sm text-gray-500 font-sans">/ 1枚 (税抜)</span>
               </p>
