@@ -8,6 +8,31 @@ import Image from 'next/image';
 export default function Purchase() {
   const [quantity, setQuantity] = useState(1);
   const price = 1200;
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  async function handleCheckout() {
+    setErrorMessage(null);
+    setIsLoading(true);
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ quantity }),
+      });
+
+      const data = (await res.json()) as { url?: string; error?: string };
+      if (!res.ok || !data.url) {
+        throw new Error(data.error || '決済セッションの作成に失敗しました。');
+      }
+
+      window.location.assign(data.url);
+    } catch (e) {
+      setErrorMessage(e instanceof Error ? e.message : 'エラーが発生しました。');
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   return (
     <div className="bg-white min-h-screen">
@@ -89,18 +114,25 @@ export default function Purchase() {
                   <div className="flex items-start bg-blue-50 p-4 rounded-md">
                     <Info className="w-5 h-5 text-blue-400 mt-0.5 mr-3 shrink-0" />
                     <p className="text-xs text-blue-800 leading-relaxed">
-                      現在、オンライン決済システムの準備中です。<br />
-                      「購入手続きへ進む」をクリックすると、専用の注文フォーム（Googleフォーム等）へ遷移します。請求書払い（月末締め翌月末払い）にて対応させていただきます。
+                      「購入手続きへ進む」をクリックすると、Stripe のテスト決済画面へ遷移します。<br />
+                      テスト用のカード番号（例: 4242 4242 4242 4242）で決済確認できます。
                     </p>
                   </div>
 
+                  {errorMessage && (
+                    <div className="bg-red-50 text-red-700 text-sm rounded-md px-4 py-3">
+                      {errorMessage}
+                    </div>
+                  )}
+
                   <button
                     type="button"
-                    onClick={() => alert('注文フォームへ遷移します（デモ）')}
-                    className="w-full flex items-center justify-center px-8 py-4 text-base font-medium tracking-widest text-white bg-brand-green hover:bg-brand-green-dark transition-colors rounded-sm shadow-md"
+                    onClick={handleCheckout}
+                    disabled={isLoading}
+                    className="w-full flex items-center justify-center px-8 py-4 text-base font-medium tracking-widest text-white bg-brand-green hover:bg-brand-green-dark transition-colors rounded-sm shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <ShoppingBag className="w-5 h-5 mr-2" />
-                    購入手続きへ進む
+                    {isLoading ? '決済画面へ移動中…' : '購入手続きへ進む'}
                   </button>
                 </form>
               </div>
