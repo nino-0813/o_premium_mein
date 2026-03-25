@@ -19,7 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: '製品情報', path: '/product' },
     { name: 'ご購入', path: '/purchase' },
     { name: '導入事例・口コミ', path: '/reviews' },
-    { name: 'サンプル・資料請求', path: '/sample' },
+    { name: 'サンプル請求', path: '/sample' },
     { name: 'お問い合わせ', path: '/contact' },
   ];
 
@@ -31,7 +31,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between items-center h-14 sm:h-20">
             <div className="flex-shrink-0 flex items-center min-w-0">
               <Link href="/" className="flex items-center gap-2 min-w-0">
-                <span className="font-serif text-lg sm:text-xl tracking-widest text-brand-green truncate">O premium</span>
+                <span className="font-serif text-lg sm:text-xl tracking-widest text-brand-green truncate">O PREMIUM</span>
               </Link>
             </div>
 
@@ -90,7 +90,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
             <div>
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
-                <span className="font-serif text-lg sm:text-xl tracking-widest">O premium</span>
+                <span className="font-serif text-lg sm:text-xl tracking-widest">O PREMIUM</span>
               </div>
               <p className="text-sm text-gray-300 leading-relaxed mb-6">
                 現場の歯科衛生士が考えた、<br />
@@ -149,7 +149,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20 text-center text-xs text-gray-400 tracking-wider">
             <Link href="/privacy" className="hover:text-white transition-colors">プライバシーポリシー</Link>
             <span className="mx-2">|</span>
-            &copy; {new Date().getFullYear()} 合同会社Proof / O premium. All rights reserved.
+            &copy; {new Date().getFullYear()} 合同会社Proof / O PREMIUM. All rights reserved.
           </div>
         </div>
       </footer>

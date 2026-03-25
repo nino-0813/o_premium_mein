@@ -37,7 +37,7 @@ export default function Product() {
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 relative">
                 <Image
                   src="/images/o-premium-face-towel-main.webp"
-                  alt="O premium 歯科専用フェイスタオル（積み上げ・穴あき仕様）"
+                  alt="O PREMIUM 歯科専用フェイスタオル（積み上げ・穴あき仕様）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -45,13 +45,13 @@ export default function Product() {
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                  <Image src="/images/o-premium-towel-texture.webp" alt="O premium タオル生地の質感" fill className="object-cover" sizes="150px" />
+                  <Image src="/images/o-premium-towel-texture.webp" alt="O PREMIUM タオル生地の質感" fill className="object-cover" sizes="150px" />
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                  <Image src="/images/o-premium-towel-edge.webp" alt="O premium 穴あき部分のパイピング縫製" fill className="object-cover" sizes="150px" />
+                    <Image src="/images/S__375259140_0.jpg" alt="O PREMIUM 穴あき部分のパイピング縫製" fill className="object-cover" sizes="150px" />
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                  <Image src="/images/o-premium-towel-brand.webp" alt="O premium ブランドタグ" fill className="object-cover" sizes="150px" />
+                    <Image src="/images/S__375259139_0.jpg" alt="O PREMIUM ブランドタグ" fill className="object-cover" sizes="150px" />
                 </div>
               </div>
             </motion.div>
@@ -66,9 +66,9 @@ export default function Product() {
                   歯科専用設計
                 </span>
               </div>
-              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-4 break-keep">O premium（オー・プレミアム）</h2>
+              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-4 break-keep">O PREMIUM（オー・プレミアム）</h2>
               <p className="text-2xl text-brand-green font-serif mb-8">
-                ¥1,200 <span className="text-sm text-gray-500 font-sans">/ 1枚 (税抜)</span>
+                ¥1,000 <span className="text-sm text-gray-500 font-sans">/ 1枚 (税抜)</span>
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-10">
@@ -82,7 +82,7 @@ export default function Product() {
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 text-sm">
                   <div className="flex justify-between sm:block border-b border-gray-100 pb-2 sm:border-0 sm:pb-0">
                     <dt className="text-gray-500 mb-1">サイズ</dt>
-                    <dd className="text-gray-900 font-medium">約 34cm × 85cm</dd>
+                    <dd className="text-gray-900 font-medium">約 35cm × 34cm</dd>
                   </div>
                   <div className="flex justify-between sm:block border-b border-gray-100 pb-2 sm:border-0 sm:pb-0">
                     <dt className="text-gray-500 mb-1">素材</dt>
@@ -90,11 +90,11 @@ export default function Product() {
                   </div>
                   <div className="flex justify-between sm:block border-b border-gray-100 pb-2 sm:border-0 sm:pb-0">
                     <dt className="text-gray-500 mb-1">重さ</dt>
-                    <dd className="text-gray-900 font-medium">約 100g（320匁）</dd>
+                    <dd className="text-gray-900 font-medium">約 50g</dd>
                   </div>
                   <div className="flex justify-between sm:block border-b border-gray-100 pb-2 sm:border-0 sm:pb-0">
                     <dt className="text-gray-500 mb-1">生産国</dt>
-                    <dd className="text-gray-900 font-medium">日本（今治産）</dd>
+                    <dd className="text-gray-900 font-medium">中国</dd>
                   </div>
                 </dl>
               </div>

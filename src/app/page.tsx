@@ -51,7 +51,7 @@ export default function Home() {
             <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-4 sm:mb-6 break-keep">
               歯科専門<br />
               オー・プレミアム<br />
-              <span className="text-brand-green">O premium</span>
+              <span className="text-brand-green">O PREMIUM</span>
             </h1>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10 tracking-wide">
               超甘撚り（ちょうあまより）糸で織りあげた、吸水性に優れ、とにかくふわふわのタオルです。
@@ -78,7 +78,7 @@ export default function Home() {
       <section className="py-16 sm:py-24 bg-brand-green-light/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-3 sm:mb-4 tracking-widest break-keep">O premium の3つの特徴</h2>
+            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-3 sm:mb-4 tracking-widest break-keep">O PREMIUM の3つの特徴</h2>
             <div className="w-12 h-0.5 bg-brand-green mx-auto" />
           </div>
 
@@ -124,7 +124,7 @@ export default function Home() {
             >
               <Image
                 src="/images/o-premium-towel-stack.webp"
-                alt="O premium 歯科専用プレミアムタオル（積み上げたタオルとブランドタグ）"
+                  alt="O PREMIUM 歯科専用プレミアムタオル（積み上げたタオルとブランドタグ）"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -141,7 +141,7 @@ export default function Home() {
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
                 毎日多くの患者様と接する中で気になっていた、治療中の水はねや金属片の飛散。そして、タオルを顔にかけられる患者様のわずかな緊張感。<br /><br />
                 「もっと治療がしやすく、患者様も快適に過ごせるタオルはないだろうか？」<br />
-                そんな現場の歯科衛生士の想いから「O premium」は誕生しました。超甘撚り糸の極上のふわふわ感と、計算し尽くされた穴（O）のサイズが、これまでにない快適な診療空間を実現します。
+                そんな現場の歯科衛生士の想いから「O PREMIUM」は誕生しました。超甘撚り糸の極上のふわふわ感と、計算し尽くされた穴（O）のサイズが、これまでにない快適な診療空間を実現します。
               </p>
               <Link
                 href="/about"

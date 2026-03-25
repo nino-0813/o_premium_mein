@@ -21,9 +21,9 @@ const shipporiMincho = Shippori_Mincho({
 export const metadata: Metadata = {
   title: '歯科専用フェイスタオル | Premium Dental Towel',
   description:
-    '現場の歯科衛生士が考えた、超甘撚り糸で織りあげた歯科専用プレミアムタオル。O premium（オー・プレミアム）',
+    '現場の歯科衛生士が考えた、超甘撚り糸で織りあげた歯科専用プレミアムタオル。O PREMIUM（オー・プレミアム）',
   openGraph: {
-    title: '歯科専用フェイスタオル | O premium',
+    title: '歯科専用フェイスタオル | O PREMIUM',
   },
   verification: {
     google: 'fDRaibgQ2klb6HO0ojrsHeY8vnxA7_-zxUzQzH66nsA',

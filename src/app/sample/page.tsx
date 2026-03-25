@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'motion/react';
-import { FileText, Package, Send } from 'lucide-react';
+import { Package, Send } from 'lucide-react';
 import { useState, FormEvent, useEffect, useCallback } from 'react';
 
 type SubmitStatus = 'idle' | 'sending' | 'success' | 'error';
@@ -16,7 +16,7 @@ export default function SampleRequest() {
     email: '',
     phone: '',
     address: '',
-    requestType: 'both' as 'sample' | 'doc' | 'both',
+    requestType: 'sample' as 'sample',
     message: '',
   });
   const [postalCode, setPostalCode] = useState('');
@@ -76,7 +76,7 @@ export default function SampleRequest() {
         email: '',
         phone: '',
         address: '',
-        requestType: 'both',
+        requestType: 'sample',
         message: '',
       });
     } catch {
@@ -94,7 +94,7 @@ export default function SampleRequest() {
             animate={{ opacity: 1, y: 0 }}
             className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-keep"
           >
-            サンプル・資料請求
+            サンプル請求
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -112,32 +112,18 @@ export default function SampleRequest() {
               <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 break-keep">無料でお試しいただけます</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
                 実際の肌触りや吸水性をご確認いただけるよう、歯科医院様限定で無料サンプルをお送りしております。<br />
-                製品の詳細な仕様や価格表が記載された資料も同封いたします。
+                お気軽にお申し込みください。
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-4">
                 <label className="block text-sm font-medium text-gray-700">ご希望の内容 <span className="text-red-500 ml-1">*</span></label>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   <label className={`flex items-center justify-center p-4 border rounded-lg cursor-pointer transition-colors ${formData.requestType === 'sample' ? 'border-brand-green bg-brand-green-light/20' : 'border-gray-200 hover:bg-gray-50'}`}>
                     <input type="radio" name="requestType" value="sample" className="sr-only" checked={formData.requestType === 'sample'} onChange={(e) => setFormData({ ...formData, requestType: e.target.value as 'sample' })} />
                     <Package className={`w-5 h-5 mr-2 ${formData.requestType === 'sample' ? 'text-brand-green' : 'text-gray-400'}`} />
                     <span className={`text-sm font-medium ${formData.requestType === 'sample' ? 'text-brand-green' : 'text-gray-600'}`}>サンプルのみ</span>
-                  </label>
-                  <label className={`flex items-center justify-center p-4 border rounded-lg cursor-pointer transition-colors ${formData.requestType === 'doc' ? 'border-brand-green bg-brand-green-light/20' : 'border-gray-200 hover:bg-gray-50'}`}>
-                    <input type="radio" name="requestType" value="doc" className="sr-only" checked={formData.requestType === 'doc'} onChange={(e) => setFormData({ ...formData, requestType: e.target.value as 'doc' })} />
-                    <FileText className={`w-5 h-5 mr-2 ${formData.requestType === 'doc' ? 'text-brand-green' : 'text-gray-400'}`} />
-                    <span className={`text-sm font-medium ${formData.requestType === 'doc' ? 'text-brand-green' : 'text-gray-600'}`}>資料のみ</span>
-                  </label>
-                  <label className={`flex items-center justify-center p-4 border rounded-lg cursor-pointer transition-colors ${formData.requestType === 'both' ? 'border-brand-green bg-brand-green-light/20' : 'border-gray-200 hover:bg-gray-50'}`}>
-                    <input type="radio" name="requestType" value="both" className="sr-only" checked={formData.requestType === 'both'} onChange={(e) => setFormData({ ...formData, requestType: e.target.value as 'both' })} />
-                    <div className="flex items-center">
-                      <Package className={`w-4 h-4 mr-1 ${formData.requestType === 'both' ? 'text-brand-green' : 'text-gray-400'}`} />
-                      <span className="mx-1 text-gray-300">+</span>
-                      <FileText className={`w-4 h-4 mr-2 ${formData.requestType === 'both' ? 'text-brand-green' : 'text-gray-400'}`} />
-                    </div>
-                    <span className={`text-sm font-medium ${formData.requestType === 'both' ? 'text-brand-green' : 'text-gray-600'}`}>両方</span>
                   </label>
                 </div>
               </div>

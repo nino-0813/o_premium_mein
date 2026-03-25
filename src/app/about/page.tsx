@@ -38,7 +38,7 @@ export default function About() {
 
             <p className="mb-8">
               毎日、診療の現場で患者様のお顔にタオルをかける歯科衛生士。<br />
-              「O premium」は、そんな現場の切実な想いから生まれました。
+              「O PREMIUM」は、そんな現場の切実な想いから生まれました。
             </p>
 
             <p className="mb-8">
@@ -49,7 +49,7 @@ export default function About() {
             <div className="relative w-full rounded-xl my-12 overflow-hidden aspect-[2/1]">
               <Image
                 src="/images/o-premium-dental-clinic.webp"
-                alt="O premium ブランドタグと歯科医院の診療風景"
+                alt="O PREMIUM ブランドタグと歯科医院の診療風景"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"
@@ -82,7 +82,7 @@ export default function About() {
             <div className="relative w-full rounded-xl my-12 overflow-hidden aspect-[2/1]">
               <Image
                 src="/images/o-premium-towels-product.webp"
-                alt="O premium タオル製品（穴あきフェイスタオルとロールタオル）"
+                alt="O PREMIUM タオル製品（穴あきフェイスタオルとロールタオル）"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"
@@ -90,11 +90,11 @@ export default function About() {
             </div>
 
             <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-keep">
-              「O premium（オー・プレミアム）」に込めた想い
+              「O PREMIUM（オー・プレミアム）」に込めた想い
             </h3>
 
             <p className="mb-8">
-              ブランド名である「O premium」は、こだわりの穴（O）の形状と、患者様に提供するプレミアムな時間（premium）を表しています。
+              ブランド名である「O PREMIUM」は、こだわりの穴（O）の形状と、患者様に提供するプレミアムな時間（premium）を表しています。
             </p>
 
             <p className="mb-16">

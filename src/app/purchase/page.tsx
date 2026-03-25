@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { ShoppingBag, Info } from 'lucide-react';
+import { ShoppingBag } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
 export default function Purchase() {
   const [quantity, setQuantity] = useState(1);
-  const price = 1200;
+  const price = 1000;
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -62,13 +62,13 @@ export default function Purchase() {
                 <div className="aspect-square rounded-xl overflow-hidden mb-6 bg-white border border-gray-100 relative">
                   <Image
                     src="/images/o-premium-face-towel-main.webp"
-                    alt="O premium 歯科専用フェイスタオル"
+                    alt="O PREMIUM 歯科専用フェイスタオル"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <h2 className="font-serif text-xl text-gray-900 mb-2">O premium（オー・プレミアム）</h2>
+                <h2 className="font-serif text-xl text-gray-900 mb-2">O PREMIUM（オー・プレミアム）</h2>
                 <p className="text-sm text-gray-500 mb-4">グレー / 穴あき仕様</p>
                 <div className="text-2xl text-brand-green font-serif">
                   ¥{price.toLocaleString()} <span className="text-xs text-gray-500 font-sans">/ 枚 (税抜)</span>
@@ -109,14 +109,6 @@ export default function Purchase() {
                         ¥{Math.floor(price * quantity * 10 * 1.1).toLocaleString()}
                       </span>
                     </div>
-                  </div>
-
-                  <div className="flex items-start bg-blue-50 p-4 rounded-md">
-                    <Info className="w-5 h-5 text-blue-400 mt-0.5 mr-3 shrink-0" />
-                    <p className="text-xs text-blue-800 leading-relaxed">
-                      「購入手続きへ進む」をクリックすると、Stripe のテスト決済画面へ遷移します。<br />
-                      テスト用のカード番号（例: 4242 4242 4242 4242）で決済確認できます。
-                    </p>
                   </div>
 
                   {errorMessage && (

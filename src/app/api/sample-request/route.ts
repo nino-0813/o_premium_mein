@@ -3,8 +3,6 @@ import { google } from 'googleapis';
 
 const REQUEST_TYPE_LABELS: Record<string, string> = {
   sample: 'サンプルのみ',
-  doc: '資料のみ',
-  both: '両方',
 };
 
 export async function POST(request: Request) {
@@ -17,7 +15,7 @@ export async function POST(request: Request) {
       phone,
       postalCode = '',
       address,
-      requestType,
+      requestType = 'sample',
       message = '',
     } = body;
 

@@ -16,8 +16,8 @@ export async function POST(request: Request) {
 
     const origin = request.headers.get('origin') ?? 'http://localhost:3000';
 
-    // 表示の合計金額に合わせて「税込み単価」で課金（¥1200 + 10% = ¥1320）
-    const unitAmountJpyTaxIncluded = 1320;
+    // 表示の合計金額に合わせて「税込み単価」で課金（¥1000 + 10% = ¥1100）
+    const unitAmountJpyTaxIncluded = 1100;
     const piecesPerSet = 10;
 
     const stripe = getStripeServer();
@@ -30,7 +30,7 @@ export async function POST(request: Request) {
           price_data: {
             currency: 'jpy',
             product_data: {
-              name: 'O premium（オー・プレミアム）歯科専用フェイスタオル（グレー / 穴あき仕様）',
+              name: 'O PREMIUM（オー・プレミアム）歯科専用フェイスタオル（グレー / 穴あき仕様）',
             },
             unit_amount: unitAmountJpyTaxIncluded,
           },
