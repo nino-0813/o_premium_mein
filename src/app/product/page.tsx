@@ -45,13 +45,13 @@ export default function Product() {
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                  <Image src="/images/o-premium-towel-texture.webp" alt="O PREMIUM タオル生地の質感" fill className="object-cover" sizes="150px" />
+                  <Image src="/images/ChatGPT Image 2026年3月25日 23_04_05.png" alt="O PREMIUM タオル生地の質感" fill className="object-cover" sizes="150px" />
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                    <Image src="/images/S__375259140_0.jpg" alt="O PREMIUM 穴あき部分のパイピング縫製" fill className="object-cover" sizes="150px" />
+                    <Image src="/images/スクリーンショット 2026-03-25 22.59.05.png" alt="O PREMIUM 穴あき部分のパイピング縫製" fill className="object-cover" sizes="150px" />
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden">
-                    <Image src="/images/S__375259139_0.jpg" alt="O PREMIUM ブランドタグ" fill className="object-cover" sizes="150px" />
+                    <Image src="/images/スクリーンショット 2026-03-25 22.58.58.png" alt="O PREMIUM ブランドタグ" fill className="object-cover" sizes="150px" />
                 </div>
               </div>
             </motion.div>

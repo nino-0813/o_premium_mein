@@ -25,6 +25,8 @@ export async function POST(request: Request) {
       mode: 'payment',
       success_url: `${origin}/purchase?status=success`,
       cancel_url: `${origin}/purchase?status=cancel`,
+      customer_creation: 'if_required',
+      billing_address_collection: 'required',
       line_items: [
         {
           price_data: {
