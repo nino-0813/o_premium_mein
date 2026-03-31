@@ -1,10 +1,5 @@
 import type { MetadataRoute } from 'next';
-
-function getSiteUrl() {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (!raw) return 'http://localhost:3000';
-  return raw.replace(/\/+$/, '');
-}
+import { getSiteUrl } from '@/src/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
@@ -14,6 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/', priority: 1 },
     { path: '/product', priority: 0.9 },
     { path: '/purchase', priority: 0.8 },
+    { path: '/column', priority: 0.7 },
+    { path: '/column/dental-water-splash', priority: 0.7 },
+    { path: '/column/drape-towel-guide', priority: 0.7 },
+    { path: '/column/patient-satisfaction-towel', priority: 0.7 },
     { path: '/about', priority: 0.7 },
     { path: '/reviews', priority: 0.6 },
     { path: '/sample', priority: 0.6 },

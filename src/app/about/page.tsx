@@ -11,7 +11,7 @@ export default function About() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-keep"
+            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-words sm:break-keep"
           >
             ブランドストーリー
           </motion.h1>
@@ -32,7 +32,7 @@ export default function About() {
             viewport={{ once: true }}
             className="prose prose-sm sm:prose-lg prose-green mx-auto text-gray-700 leading-loose max-w-full"
           >
-            <h2 className="font-serif text-lg sm:text-xl md:text-2xl text-brand-green text-center mb-8 sm:mb-12 break-keep">
+            <h2 className="font-serif text-lg sm:text-xl md:text-2xl text-brand-green text-center mb-8 sm:mb-12 break-words sm:break-keep">
               「もっと患者様に優しく、もっと治療しやすいタオルを」
             </h2>
 
@@ -56,7 +56,7 @@ export default function About() {
               />
             </div>
 
-            <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-keep">
+            <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-words sm:break-keep">
               たどり着いた「超甘撚り糸」と「ベストな穴（O）のサイズ」
             </h3>
 
@@ -89,7 +89,7 @@ export default function About() {
               />
             </div>
 
-            <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-keep">
+            <h3 className="font-serif text-lg sm:text-xl text-gray-900 mt-10 sm:mt-12 mb-4 sm:mb-6 border-l-4 border-brand-green pl-4 break-words sm:break-keep">
               「O PREMIUM（オー・プレミアム）」に込めた想い
             </h3>
 

@@ -19,6 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: '製品情報', path: '/product' },
     { name: 'ご購入', path: '/purchase' },
     { name: '導入事例・口コミ', path: '/reviews' },
+    { name: 'コラム', path: '/column' },
     { name: 'サンプル請求', path: '/sample' },
     { name: 'お問い合わせ', path: '/contact' },
   ];

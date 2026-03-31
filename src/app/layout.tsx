@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Noto_Sans_JP, Shippori_Mincho } from 'next/font/google';
 import Layout from '@/src/components/Layout';
+import { getSiteUrl } from '@/src/lib/site';
 import './globals.css';
 
 const GA_MEASUREMENT_ID = 'G-VR85FTWKJ2';
 
-const siteUrlRaw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-const metadataBase = siteUrlRaw ? new URL(siteUrlRaw.replace(/\/+$/, '')) : undefined;
+const metadataBase = new URL(getSiteUrl());
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],

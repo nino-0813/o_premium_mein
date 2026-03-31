@@ -92,7 +92,7 @@ export default function SampleRequest() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-keep"
+            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-words sm:break-keep"
           >
             サンプル請求
           </motion.h1>
@@ -109,7 +109,7 @@ export default function SampleRequest() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 md:p-12">
             <div className="text-center mb-10">
-              <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 break-keep">無料でお試しいただけます</h2>
+              <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 break-words sm:break-keep">無料でお試しいただけます</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
                 実際の肌触りや吸水性をご確認いただけるよう、歯科医院様限定で無料サンプルをお送りしております。<br />
                 お気軽にお申し込みください。

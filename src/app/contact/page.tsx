@@ -52,7 +52,7 @@ export default function Contact() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-keep"
+            className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-words sm:break-keep"
           >
             お問い合わせ
           </motion.h1>
@@ -70,7 +70,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 sm:gap-16">
             <div className="lg:col-span-1 space-y-10">
               <div>
-                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 break-keep">お問い合わせ先</h2>
+                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 break-words sm:break-keep">お問い合わせ先</h2>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-brand-green-light rounded-full flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-brand-green" />
@@ -82,7 +82,7 @@ export default function Contact() {
               </div>
 
               <div className="border-t border-gray-100 pt-10">
-                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 break-keep">運営会社</h2>
+                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 break-words sm:break-keep">運営会社</h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center shrink-0">
@@ -110,7 +110,7 @@ export default function Contact() {
 
             <div className="lg:col-span-2">
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 md:p-12">
-                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-6 sm:mb-8 break-keep">お問い合わせフォーム</h2>
+                <h2 className="font-serif text-xl sm:text-2xl text-gray-900 mb-6 sm:mb-8 break-words sm:break-keep">お問い合わせフォーム</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
