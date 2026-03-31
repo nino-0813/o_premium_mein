@@ -6,6 +6,8 @@ import './globals.css';
 
 const GA_MEASUREMENT_ID = 'G-VR85FTWKJ2';
 
+const siteUrlRaw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+const metadataBase = siteUrlRaw ? new URL(siteUrlRaw.replace(/\/+$/, '')) : undefined;
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],
@@ -19,6 +21,7 @@ const shipporiMincho = Shippori_Mincho({
 });
 
 export const metadata: Metadata = {
+  metadataBase,
   title: '歯科専用フェイスタオル | Premium Dental Towel',
   description:
     '現場の歯科衛生士が考えた、超甘撚り糸で織りあげた歯科専用プレミアムタオル。O PREMIUM（オー・プレミアム）',
