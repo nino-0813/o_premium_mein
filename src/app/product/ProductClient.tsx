@@ -11,14 +11,14 @@ export default function ProductClient() {
       <section className="relative py-24 sm:py-32 bg-brand-green-light/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-words sm:break-keep"
           >
             製品情報
           </motion.h1>
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
             className="w-16 h-0.5 bg-brand-green mx-auto"
@@ -29,7 +29,7 @@ export default function ProductClient() {
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16">
-            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
+            <motion.div initial={false} animate={{ opacity: 1, x: 0 }} className="space-y-6">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 relative">
                 <Image
                   src="/images/o-premium-face-towel-main.webp"
@@ -64,7 +64,7 @@ export default function ProductClient() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex flex-col justify-center">
+            <motion.div initial={false} animate={{ opacity: 1, x: 0 }} className="flex flex-col justify-center">
               <div className="mb-2">
                 <span className="inline-block px-3 py-1 bg-brand-green-light text-brand-green text-xs font-medium tracking-widest rounded-full">
                   歯科専用設計
@@ -72,7 +72,7 @@ export default function ProductClient() {
               </div>
               <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gray-900 mb-4 break-words sm:break-keep">O PREMIUM（オー・プレミアム）</h2>
               <p className="text-2xl text-brand-green font-serif mb-8">
-                ¥1,000 <span className="text-sm text-gray-500 font-sans">/ 1枚 (税抜)</span>
+                ¥1,100 <span className="text-sm text-gray-500 font-sans">/ 1枚 (税込)</span>
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-10">

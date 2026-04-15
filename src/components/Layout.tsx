@@ -115,6 +115,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     プライバシーポリシー
                   </Link>
                 </li>
+                <li>
+                  <Link href="/tokushoho" className="text-sm text-gray-300 hover:text-white transition-colors">
+                    特定商取引法に基づく表記
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -149,6 +154,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20 text-center text-xs text-gray-400 tracking-wider">
             <Link href="/privacy" className="hover:text-white transition-colors">プライバシーポリシー</Link>
+            <span className="mx-2">|</span>
+            <Link href="/tokushoho" className="hover:text-white transition-colors">特定商取引法に基づく表記</Link>
             <span className="mx-2">|</span>
             &copy; {new Date().getFullYear()} 合同会社Proof / O PREMIUM. All rights reserved.
           </div>

@@ -26,7 +26,7 @@ export default function ProductPage() {
       '@type': 'Offer',
       url: `${siteUrl}${productUrl}`,
       priceCurrency: 'JPY',
-      price: '1000',
+      price: '1100',
       availability: 'https://schema.org/InStock',
     },
   };

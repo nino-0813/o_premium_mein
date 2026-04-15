@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Purchase() {
   const [quantity, setQuantity] = useState(1);
-  const price = 1000;
+  const unitPriceTaxIncluded = 1100;
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -39,14 +39,14 @@ export default function Purchase() {
       <section className="relative py-24 sm:py-32 bg-brand-green-light/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             className="font-serif text-2xl sm:text-4xl md:text-5xl text-gray-900 mb-4 sm:mb-6 tracking-widest break-words sm:break-keep"
           >
             ご購入
           </motion.h1>
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
             className="w-16 h-0.5 bg-brand-green mx-auto"
@@ -71,7 +71,8 @@ export default function Purchase() {
                 <h2 className="font-serif text-xl text-gray-900 mb-2">O PREMIUM（オー・プレミアム）</h2>
                 <p className="text-sm text-gray-500 mb-4">グレー / 穴あき仕様</p>
                 <div className="text-2xl text-brand-green font-serif">
-                  ¥{price.toLocaleString()} <span className="text-xs text-gray-500 font-sans">/ 枚 (税抜)</span>
+                  ¥{unitPriceTaxIncluded.toLocaleString()}{' '}
+                  <span className="text-xs text-gray-500 font-sans">/ 枚 (税込)</span>
                 </div>
               </div>
 
@@ -95,18 +96,13 @@ export default function Purchase() {
                   </div>
 
                   <div className="bg-brand-green-light/30 rounded-lg p-6">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-gray-600">小計 ({quantity * 10}枚)</span>
-                      <span className="text-lg font-medium text-gray-900">¥{(price * quantity * 10).toLocaleString()}</span>
-                    </div>
-                    <div className="flex justify-between items-center mb-4">
-                      <span className="text-sm text-gray-600">消費税 (10%)</span>
-                      <span className="text-sm text-gray-600">¥{Math.floor(price * quantity * 10 * 0.1).toLocaleString()}</span>
-                    </div>
-                    <div className="border-t border-brand-green/20 pt-4 flex justify-between items-end">
-                      <span className="text-base font-medium text-gray-900">合計金額</span>
-                      <span className="text-3xl font-serif text-brand-green">
-                        ¥{Math.floor(price * quantity * 10 * 1.1).toLocaleString()}
+                    <div className="flex justify-between items-end gap-4">
+                      <span className="text-base font-medium text-gray-900">
+                        合計金額（税込）
+                        <span className="block text-sm font-normal text-gray-600 mt-1">{quantity * 10}枚</span>
+                      </span>
+                      <span className="text-3xl font-serif text-brand-green shrink-0">
+                        ¥{(unitPriceTaxIncluded * quantity * 10).toLocaleString()}
                       </span>
                     </div>
                   </div>
